@@ -1,7 +1,6 @@
 class Solution {
     fun searchRange(nums: IntArray, target: Int): IntArray {
         
-        val result: IntArray = intArrayOf(0 , 0)
         
         if (nums.isEmpty()){
            return intArrayOf(-1, -1)
@@ -12,9 +11,5 @@ class Solution {
                              nums.indexOfLast{it == target})
         }
         
-       
-        
-        
-      
     }
 }
