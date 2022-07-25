@@ -4,15 +4,17 @@ class Solution {
         val result: IntArray = intArrayOf(0 , 0)
         
         if (nums.isEmpty()){
-            result[0] = -1
-            result[1] = -1
+           return intArrayOf(-1, -1)
             
         }
+        else {
+           return intArrayOf(nums.indexOfFirst{it == target}, 
+                             nums.indexOfLast{it == target})
+        }
         
-        result[0] = nums.indexOfFirst{it == target}
-        result[1] = nums.indexOfLast{it == target}
+       
         
         
-        return result
+      
     }
 }
